@@ -1,0 +1,6 @@
+{
+  "name": "T3",
+  "tagline": "Turbo Turbo Theming",
+  "body": "# t3 - Turbo Turbo Theming\r\n\r\nt3 is a component framework that is easily themeable and therefore a useful developing tool.\r\n\r\n## Components\r\n\r\nButton - [docs](documentation/components/button.md) - [source](src/components/button) - [demo](demo/_button)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
