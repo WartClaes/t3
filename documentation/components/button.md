@@ -1,7 +1,7 @@
 # Button
 
 
-### Usage
+## Usage
 ```pug
 +t3-button(
   t3-button-type="secondary"
@@ -9,9 +9,9 @@
 ```
 
 
-### Attributes
+## Attributes
 
-#### t3-button-type
+### t3-button-type
 
 Sets the style of the button
 
