@@ -15,6 +15,6 @@
 
 Sets the style of the button
 
-Available options:
+**Available options:**
 - primary (default)
 - secondary
