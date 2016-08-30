@@ -15,9 +15,9 @@
 
 Sets the style of the button
 
-**Available options:**
-- primary (default)
-- secondary
+| attribute      | description             | values             | default value |
+| -------------- | ----------------------- | ------------------ | ------------- |
+| t3-button-type | sets the type of button | primary, secondary | primary       |
 
 
 ## SCSS Variables
