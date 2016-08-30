@@ -1,6 +1,9 @@
 .t3-button {
+  appearance: none;
   background-color: $t3-color-primary;
   border: 0;
   border-radius: $t3-button-border-radius;
+  box-sizing: border-box;
   display: inline-block;
+  font-size: $t3-button-font-size;
 }

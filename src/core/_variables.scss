@@ -2,17 +2,19 @@
 $t3-color-black: #000;
 $t3-color-white: #fff;
 
-$t3-color-primary: #4cc0c1;
+$t3-color-primary: #4cc0c1 !default;
 
-$t3-color-alert: #fb6b5b;
-$t3-color-warning: #ffc333;
-$t3-color-success: #8ec165;
+$t3-color-alert: #fb6b5b !default;
+$t3-color-warning: #ffc333 !default;
+$t3-color-success: #8ec165 !default;
 
 // Typography
-$t3-font-base: 'Lato', sans-serif;
+$t3-font-base: 'Lato', sans-serif !default;
+$t3-font-size-default: 14px !default;
 
 // Layout
-$t3-border-radius: 5px;
+$t3-border-radius: 5px !default;
 
 // Button settings
-$t3-button-border-radius: $t3-border-radius;
+$t3-button-border-radius: $t3-border-radius !default;
+$t3-button-font-size: $t3-font-size-default !default;
