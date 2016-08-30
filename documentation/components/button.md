@@ -2,10 +2,10 @@
 
 
 ### Usage
-```jade
+```pug
 +t3-button(
   t3-button-type="secondary"
-)
+) Button text
 ```
 
 
