@@ -12,6 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-pug": "^3.0.4",
     "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.2.0",
     "gulp-webserver": "^0.9.1",
     "rimraf": "^2.5.4",
     "run-sequence": "^1.2.2"
