@@ -22,7 +22,7 @@ Sets the style of the button
 
 ## SCSS Variables
 
-```scss
+```sass
 $t3-button-border-radius: $t3-border-radius;
 $t3-button-font-size: $t3-font-size-default;
 ```
