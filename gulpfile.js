@@ -24,7 +24,7 @@ gulp.task('clean', function(cb){
   return rimraf(config.tmp, cb);
 });
 
-gulp.task('webserver', function() {
+gulp.task('webserver', function(){
   return gulp.src(config.demo)
     .pipe(webserver({
       livereload: true,
@@ -32,13 +32,13 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('views', function buildHTML() {
+gulp.task('views', function(){
   return gulp.src(config.views.demo)
     .pipe(pug())
     .pipe(gulp.dest(config.views.dest));
 });
 
-gulp.task('styles', function () {
+gulp.task('styles', function(){
   return gulp.src(config.styles.demo)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(config.styles.dest));
@@ -52,7 +52,7 @@ gulp.task('watch', function(){
   gulp.watch(config.styles.demo, ['styles']);
 });
 
-gulp.task('default', function(cb) {
+gulp.task('default', function(cb){
   runSequence(
     'clean',
     ['views', 'styles'],
