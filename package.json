@@ -1,0 +1,17 @@
+{
+  "name": "t3",
+  "version": "0.0.1-alpha",
+  "description": "Turbo Turbo Theming is a Jade/SCSS component framework",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wart Claes <wart.claes@gmail.com> (http://turboturbo.be)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2",
+    "rimraf": "^2.5.4"
+  }
+}

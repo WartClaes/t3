@@ -4,4 +4,4 @@ t3 is a component framework that is easily themeable and therefore a useful deve
 
 ## Components
 
-Button - [docs](documentation/components/button.md) - [source](src/components/button)
+Button - [docs](documentation/components/button.md) - [source](src/components/button) - [demo](demo/_button)
