@@ -11,10 +11,6 @@
 
 ## Pug Attributes
 
-### t3-button-type
-
-Sets the style of the button
-
 | attribute      | description             | values             | default value |
 | -------------- | ----------------------- | ------------------ | ------------- |
 | t3-button-type | sets the type of button | primary, secondary | primary       |
