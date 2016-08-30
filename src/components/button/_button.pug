@@ -1,3 +1,9 @@
 mixin t3-button
-	button.t3-button
-		block
+
+  - var type = undefined;
+  if attributes['t3-button-type']
+    - type = attributes['t3-button-type'];
+    - attributes['t3-button-type'] = undefined;
+
+  button.t3-button&attributes(attributes)
+    block
