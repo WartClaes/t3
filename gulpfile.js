@@ -1,9 +1,12 @@
 var gulp = require('gulp');
 var pug = require('gulp-pug');
-var sass = require('gulp-sass');
 var rimraf = require('rimraf');
+var runSequence = require('run-sequence');
+var sass = require('gulp-sass');
+var webserver = require('gulp-webserver');
 
 var config = {
+  tmp: '.tmp',
   demo: '.tmp',
   views: {
     demo: 'demo/demo.pug',
@@ -18,7 +21,15 @@ var config = {
 };
 
 gulp.task('clean', function(cb){
-  rimraf(config.demo, cb);
+  return rimraf(config.tmp, cb);
+});
+
+gulp.task('webserver', function() {
+  return gulp.src(config.demo)
+    .pipe(webserver({
+      livereload: true,
+      open: 'demo.html'
+    }));
 });
 
 gulp.task('views', function buildHTML() {
@@ -33,7 +44,7 @@ gulp.task('styles', function () {
     .pipe(gulp.dest(config.styles.dest));
 });
 
-gulp.task('watch', ['clean', 'views', 'styles'], function(){
+gulp.task('watch', function(){
   gulp.watch(config.views.src, ['views']);
   gulp.watch(config.styles.src, ['styles']);
 
@@ -41,6 +52,12 @@ gulp.task('watch', ['clean', 'views', 'styles'], function(){
   gulp.watch(config.styles.demo, ['styles']);
 });
 
-gulp.task('default', function() {
-
+gulp.task('default', function(cb) {
+  runSequence(
+    'clean',
+    ['views', 'styles'],
+    'webserver',
+    'watch',
+    cb
+  );
 });

@@ -12,6 +12,8 @@
     "gulp": "^3.9.1",
     "gulp-pug": "^3.0.4",
     "gulp-sass": "^2.3.2",
-    "rimraf": "^2.5.4"
+    "gulp-webserver": "^0.9.1",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2"
   }
 }
